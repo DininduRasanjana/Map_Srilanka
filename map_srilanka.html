@@ -1,98 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> SriLanka </title>
-<style>
-body
-{
-background-image : url("1440x900-2971702-old-map-compass___mixed-wallpapers.jpg")
-}
-h1 {text-align :center ; color: white ; 
-}
-
- </style>
- 
- 
- <meta charset="UTF-8">
+    <title>Sri Lanka Provinces</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    
- 
- 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("1440x900-2971702-old-map-compass___mixed-wallpapers.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .flag-container {
+            width: 100%;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .flag {
+            width: 60px;
+            height: auto;
+        }
+        
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        
+        .map-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #d4af37;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .province-list {
+            display: none;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .province-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        
+        .province-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+        
+        .province-btn {
+            background-color: rgba(212, 175, 55, 0.8);
+            color: #000;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .province-btn:hover {
+            background-color: rgba(255, 204, 0, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+            
+            .flag {
+                width: 40px;
+            }
+            
+            .province-list {
+                display: block;
+            }
+            
+            .province-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-container {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            .province-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
-
-
- 
-<body bgcolor = "Black" align = "center"> 
-<h1> <I>Click A Province For Details <I> </h1>
-<marquee move direction = "right" scrolldelay = "250" >  
- <img src = "sri-lankan-flag-large.png" width = "50"> </marquee> 
-<br>
-
-<center>
-<img src = "Distric & Province Map Of Sri Lanka.jpg" width = "450" usemap ="#planetmap"  > </center>
-<map id = "planetmap2" name = "planetmap" >
- 
-  <area shape = "rect" coords = "185,280,250,312" alt "North Central"  href = "North Central Province.html" > 
-   
-
-<area shape = "rect" coords = "81,409,145,543" alt "Western"  href = "Western province.html" >  
-
-
-<area shape = "rect" coords = "247,384,341,540" alt "Uva"  href = "Uva Province.html" >  
-
-
-
-
-<area shape = "rect" coords = "60,281,186,404" alt "North Western"  href = "North Western province.html" > 
-
-
-<area shape = "rect" coords = "203,171,249,207" alt "North Central"  href = "North Central Province.html" >
-
-<area shape = "rect" coords = "124,207,249,280" alt "North Central"  href = "North Central Province.html" > 
-
-
-
-
-
-<area shape = "rect" coords = "146,404,182,541" alt "Sabaragamuwa"  href = "Sabaragamuwa Province.html" > </area>
-
-
-<area shape = "rect" coords = "183,316,247,488" alt "Central"  href = "Central province .html" > </area>
-
-<area shape = "rect" coords = "183,488,241,545" alt "Sabaragamuwa"  href = "Sabaragamuwa Province.html" > </area>
-
-<area shape = "rect" coords = "341,378,384,517" alt "Eastern"  href = "Eastern Province.html" > 
-
-
-
-<area shape = "rect" coords = "102,161,204,199" alt "Nothern"  href = "Nothern Province.html" > 
-
-
-<area shape = "rect" coords = "250,159,288,266" alt "Eastern"  href = "Eastern Province.html" > 
-
-<area shape = "rect" coords = "290,312,363,382" alt "Eastern"  href = "Eastern Province.html" > 
-
-<area shape = "rect" coords = "71,232,112,281" alt "North Western"  href = "North Western province.html" > 
-
-<area shape = "rect" coords = "248,267,288,343" alt "North Central"  href = "North Central Province.html" > 
-
-<area shape = "rect" coords = "288,220,318,265" alt "Eastern"  href = "Eastern Province.html" >
-
-<area shape = "rect" coords = "306,266,344,310" alt "Eastern"  href = "Eastern Province.html" > 
-
-<area shape = "rect" coords = "116,547,321,572" alt "Southern"  href = "Southern Province.html" > 
-
-<area shape = "rect" coords = "121,572,320,603" alt "Southern"  href = "Southern Province.html" >
-
-<area shape = "rect" coords = "85,31,253,159" alt "nothern"  href = "Nothern Province.html" >
-
-
-
-<map name=""></map>
-
-<marquee move direction = "right" scrolldelay = "250" >  <img src = "sri-lankan-flag-large.png" width = "50"> </marquee>
-
- 
+<body>
+    <div class="container">
+        <h1><i>Click A Province For Details</i></h1>
+        
+        <div class="flag-container">
+            <marquee scrollamount="3" scrolldelay="250">
+                <img src="sri-lankan-flag-large.png" class="flag" alt="Sri Lankan Flag">
+            </marquee>
+        </div>
+        
+        <div class="map-container">
+            <img src="Distric & Province Map Of Sri Lanka.jpg" class="map-image" alt="District & Province Map of Sri Lanka" usemap="#provinceMap">
+            <map id="provinceMap" name="provinceMap">
+                <area shape="rect" coords="185,280,250,312" alt="North Central" href="North Central Province.html">
+                <area shape="rect" coords="81,409,145,543" alt="Western" href="Western province.html">
+                <area shape="rect" coords="247,384,341,540" alt="Uva" href="Uva Province.html">
+                <area shape="rect" coords="60,281,186,404" alt="North Western" href="North Western province.html">
+                <area shape="rect" coords="203,171,249,207" alt="North Central" href="North Central Province.html">
+                <area shape="rect" coords="124,207,249,280" alt="North Central" href="North Central Province.html">
+                <area shape="rect" coords="146,404,182,541" alt="Sabaragamuwa" href="Sabaragamuwa Province.html">
+                <area shape="rect" coords="183,316,247,488" alt="Central" href="Central province .html">
+                <area shape="rect" coords="183,488,241,545" alt="Sabaragamuwa" href="Sabaragamuwa Province.html">
+                <area shape="rect" coords="341,378,384,517" alt="Eastern" href="Eastern Province.html">
+                <area shape="rect" coords="102,161,204,199" alt="Northern" href="Northern Province.html">
+                <area shape="rect" coords="250,159,288,266" alt="Eastern" href="Eastern Province.html">
+                <area shape="rect" coords="290,312,363,382" alt="Eastern" href="Eastern Province.html">
+                <area shape="rect" coords="71,232,112,281" alt="North Western" href="North Western province.html">
+                <area shape="rect" coords="248,267,288,343" alt="North Central" href="North Central Province.html">
+                <area shape="rect" coords="288,220,318,265" alt="Eastern" href="Eastern Province.html">
+                <area shape="rect" coords="306,266,344,310" alt="Eastern" href="Eastern Province.html">
+                <area shape="rect" coords="116,547,321,572" alt="Southern" href="Southern Province.html">
+                <area shape="rect" coords="121,572,320,603" alt="Southern" href="Southern Province.html">
+                <area shape="rect" coords="85,31,253,159" alt="Northern" href="Northern Province.html">
+            </map>
+        </div>
+        
+        <!-- <div class="province-list">
+            <h2>Or Select a Province:</h2>
+            <div class="province-grid">
+                <a href="Northern Province.html" class="province-btn">Northern Province</a>
+                <a href="North Western province.html" class="province-btn">North Western Province</a>
+                <a href="North Central Province.html" class="province-btn">North Central Province</a>
+                <a href="Central province .html" class="province-btn">Central Province</a>
+                <a href="Eastern Province.html" class="province-btn">Eastern Province</a>
+                <a href="Western province.html" class="province-btn">Western Province</a>
+                <a href="Sabaragamuwa Province.html" class="province-btn">Sabaragamuwa Province</a>
+                <a href="Uva Province.html" class="province-btn">Uva Province</a>
+                <a href="Southern Province.html" class="province-btn">Southern Province</a>
+            </div>
+        </div> -->
+        
+        <div class="flag-container">
+            <marquee scrollamount="3" scrolldelay="250">
+                <img src="sri-lankan-flag-large.png" class="flag" alt="Sri Lankan Flag">
+            </marquee>
+        </div>
+    </div>
+    
+    <script>
+        // Make image map responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.querySelector('.map-image');
+            const map = document.querySelector('#provinceMap');
+            const areas = map.querySelectorAll('area');
+            
+            // Store original coordinates
+            const originalCoords = {};
+            areas.forEach(area => {
+                originalCoords[area.alt] = area.getAttribute('coords');
+            });
+            
+            // Function to update coordinates based on image size
+            function updateMapCoords() {
+                const originalWidth = 450; // Original image width
+                const currentWidth = image.offsetWidth;
+                const scale = currentWidth / originalWidth;
+                
+                areas.forEach(area => {
+                    const originalCoord = originalCoords[area.alt];
+                    const coordsArray = originalCoord.split(',').map(coord => Math.round(parseInt(coord) * scale));
+                    area.setAttribute('coords', coordsArray.join(','));
+                });
+            }
+            
+            // Update coordinates on load and resize
+            window.addEventListener('load', updateMapCoords);
+            window.addEventListener('resize', updateMapCoords);
+            
+            // Initialize
+            updateMapCoords();
+        });
+    </script>
 </body>
-</html> 
+</html>
